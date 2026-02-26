@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="bn" dir="ltr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bengali All Newspaper | সকল বাংলা সংবাদপত্র ২০২৬</title>
+  <meta name="description" content="Bengali All Newspaper - এক জায়গায় পড়ুন সকল বাংলা পত্রিকা। প্রথম আলো, যুগান্তর, কালের কণ্ঠ, বাংলাদেশ প্রতিদিনসহ সকল বাংলা নিউজপেপার।"/>
+  <meta name="keywords" content="bengali all newspaper, bangla newspaper, all bengali newspaper, bengali newspaper 2026, সকল বাংলা পত্রিকা"/>
+  <meta name="robots" content="index, follow"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Bengali All Newspaper | সকল বাংলা সংবাদপত্র ২০২৬"/>
+  <meta property="og:description" content="সকল বাংলা পত্রিকা এক জায়গায়"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&family=Noto+Serif+Bengali:wght@400;600;700&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root {
+      --red:       #c0392b;
+      --red-dark:  #962d22;
+      --red-light: #e74c3c;
+      --gold:      #e8a020;
+      --ink:       #1a1a1a;
+      --paper:     #faf8f4;
+      --cream:     #f2ede4;
+      --border:    #d4c9b8;
+      --muted:     #6b6055;
+      --white:     #ffffff;
+      --sidebar-w: 260px;
+      --radius:    8px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Source Serif 4', 'Noto Serif Bengali', Georgia, serif;
+      background: var(--paper);
+      color: var(--ink);
+      font-size: 15px;
+      line-height: 1.65;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; height: auto; display: block; }
+
+    /* ── HEADER ──────────────────────────────────── */
+    #header {
+      background: var(--red);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 12px rgba(0,0,0,.35);
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 11px 0;
+      text-decoration: none;
+    }
+
+    .logo-badge {
+      width: 42px; height: 42px;
+      background: var(--white);
+      border-radius: 7px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 13px; font-weight: 900;
+      color: var(--red);
+      flex-shrink: 0;
+      letter-spacing: -.5px;
+    }
+
+    .logo-text { display: flex; flex-direction: column; line-height: 1.15; }
+    .logo-en   { font-family: 'Playfair Display', serif; font-size: 15px; font-weight: 900; color: var(--white); }
+    .logo-bn   { font-family: 'Noto Serif Bengali', serif; font-size: 12px; color: rgba(255,255,255,.72); }
+
+    nav { display: flex; gap: 2px; flex-wrap: wrap; }
+    nav a {
+      font-family: 'Noto Serif Bengali', serif;
+      font-size: 12.5px; font-weight: 600;
+      color: rgba(255,255,255,.9);
+      padding: 7px 12px;
+      border-radius: 5px;
+      transition: background .18s;
+    }
+    nav a:hover { background: rgba(255,255,255,.18); }
+
+    /* ── HERO ────────────────────────────────────── */
+    #hero {
+      background: var(--ink);
+      padding: 52px 18px 44px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    #hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 30px,
+        rgba(255,255,255,.018) 30px,
+        rgba(255,255,255,.018) 31px
+      );
+    }
+
+    .hero-eyebrow {
+      font-family: 'Playfair Display', serif;
+      font-size: 10.5px; font-weight: 700;
+      letter-spacing: .18em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 14px;
+    }
+
+    #hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 52px; font-weight: 900;
+      color: var(--white);
+      line-height: 1.08;
+      margin-bottom: 12px;
+    }
+    #hero h1 span { color: var(--gold); }
+
+    .hero-sub {
+      font-family: 'Noto Serif Bengali', serif;
+      font-size: 20px;
+      color: rgba(255,255,255,.62);
+      margin-bottom: 28px;
+    }
+
+    .pills {
+      display: flex; flex-wrap: wrap;
+      gap: 8px; justify-content: center;
+    }
+    .pills a {
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.16);
+      color: rgba(255,255,255,.85);
+      font-family: 'Noto Serif Bengali', serif;
+      font-size: 12.5px;
+      padding: 5px 16px;
+      border-radius: 30px;
+      transition: all .2s;
+    }
+    .pills a:hover { background: var(--red); border-color: var(--red); color: var(--white); }
+
+    /* ── TICKER ──────────────────────────────────── */
+    #ticker {
+      background: var(--gold);
+      padding: 7px 0;
+      overflow: hidden;
+    }
+    .ticker-inner {
+      max-width: 1200px; margin: 0 auto;
+      padding: 0 18px;
+      display: flex; align-items: center;
+    }
+    .ticker-label {
+      background: var(--red);
+      color: var(--white);
+      font-family: 'Playfair Display', serif;
+      font-size: 10px; font-weight: 700;
+      letter-spacing: .1em; text-transform: uppercase;
+      padding: 4px 13px;
+      flex-shrink: 0; white-space: nowrap;
+      border-radius: 3px;
+    }
+    .ticker-text {
+      font-family: 'Noto Serif Bengali', serif;
+      font-size: 13px; color: var(--ink);
+      padding: 0 16px;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+
+    /* ── LAYOUT ──────────────────────────────────── */
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 1fr var(--sidebar-w);
+      gap: 30px;
+      padding: 30px 0 52px;
+    }
+
+    /* ── SECTION HEADERS ─────────────────────────── */
+    .sec { margin-bottom: 38px; }
+
+    .sec-head {
+      display: flex; align-items: center; gap: 10px;
+      margin-bottom: 20px;
+      padding-bottom: 11px;
+      border-bottom: 2px solid var(--border);
+      flex-wrap: wrap;
+    }
+    .sec-head h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 18px; font-weight: 900;
+      color: var(--ink);
+    }
+    .badge {
+      background: var(--red); color: var(--white);
+      font-family: 'Playfair Display', serif;
+      font-size: 9.5px; font-weight: 700;
+      letter-spacing: .09em; text-transform: uppercase;
+      padding: 3px 10px; border-radius: 3px;
+      flex-shrink: 0;
+    }
+    .more {
+      margin-left: auto;
+      font-family: 'Source Serif 4', serif;
+      font-size: 12px; font-weight: 600;
+      color: var(--red);
+      border: 1.5px solid var(--red);
+      padding: 4px 12px; border-radius: 5px;
+      white-space: nowrap;
+      transition: all .18s;
+    }
+    .more:hover { background: var(--red); color: var(--white); }
+
+    /* ── TOP-10 GRID ─────────────────────────────── */
+    .grid-top10 {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+      gap: 11px;
+    }
+
+    .card-top10 {
+      position: relative;
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      display: block;
+      transition: box-shadow .2s, border-color .2s, transform .18s;
+    }
+    .card-top10:hover {
+      box-shadow: 0 10px 26px rgba(0,0,0,.13);
+      border-color: var(--red);
+      transform: translateY(-2px);
+    }
+
+    .rank {
+      position: absolute; top: 6px; left: 6px;
+      background: var(--red); color: var(--white);
+      font-family: 'Playfair Display', serif;
+      font-size: 10px; font-weight: 700;
+      width: 20px; height: 20px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      z-index: 1;
+    }
+
+    .card-img {
+      background: var(--cream);
+      padding: 13px 8px 9px;
+      display: flex; align-items: center; justify-content: center;
+      min-height: 62px;
+    }
+    .card-img img { max-height: 44px; width: auto; object-fit: contain; }
+
+    .card-name {
+      font-family: 'Noto Serif Bengali', serif;
+      font-size: 11.5px; font-weight: 600;
+      text-align: center;
+      padding: 7px 6px 9px;
+      border-top: 1px solid var(--cream);
+      color: var(--ink);
+      line-height: 1.35;
+    }
+
+    /* ── SMALL GRID ──────────────────────────────── */
+    .grid-sm {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(95px, 1fr));
+      gap: 10px;
+    }
+
+    .card-sm {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      overflow: hidden;
+      display: block;
+      transition: box-shadow .2s, border-color .2s, transform .18s;
+    }
+    .card-sm:hover {
+      box-shadow: 0 6px 20px rgba(0,0,0,.11);
+      border-color: var(--red);
+      transform: translateY(-2px);
+    }
+
+    .card-sm-img {
+      background: var(--cream);
+      padding: 10px 8px 7px;
+      display: flex; align-items: center; justify-content: center;
+      min-height: 54px;
+    }
+    .card-sm-img img { max-height: 38px; width: auto; object-fit: contain; }
+
+    .card-sm-name {
+      font-family: 'Noto Serif Bengali', serif;
+      font-size: 10.5px;
+      text-align: center;
+      padding: 5px 6px 8px;
+      border-top: 1px solid var(--cream);
+      color: var(--ink);
+      line-height: 1.35;
+    }
+
+    /* ── DESC BOX ────────────────────────────────── */
+    .desc-box {
+      background: var(--cream);
+      border-left: 3.5px solid var(--red);
+      border-radius: 0 6px 6px 0;
+      padding: 12px 16px;
+      font-family: 'Source Serif 4', serif;
+      font-size: 13px; color: var(--muted);
+      line-height: 1.8; margin-top: 18px;
+    }
+    .desc-box a { color: var(--red); text-decoration: underline; }
+
+    /* ── DIVIDER ─────────────────────────────────── */
+    hr.dvd { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+
+    /* ── FAQ ─────────────────────────────────────── */
+    .faq-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+    .faq-q {
+      padding: 14px 18px;
+      font-family: 'Noto Serif Bengali', serif;
+      font-size: 14px; font-weight: 700; color: var(--ink);
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 10px;
+      transition: background .15s;
+    }
+    .faq-q:hover { background: var(--cream); }
+    .faq-q::after { content: '＋'; font-size: 16px; color: var(--red); flex-shrink: 0; }
+    .faq-item.open .faq-q::after { content: '－'; }
+    .faq-a {
+      display: none;
+      padding: 0 18px 14px;
+      font-family: 'Noto Serif Bengali', serif;
+      font-size: 13.5px; color: var(--muted);
+      line-height: 1.85;
+    }
+    .faq-item.open .faq-a { display: block; }
+
+    /* ── ABOUT ───────────────────────────────────── */
+    .about-box {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 26px 22px;
+      margin-bottom: 38px;
+    }
+    .about-box h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 15.5px; font-weight: 900;
+      color: var(--ink); margin-bottom: 14px;
+    }
+    .about-box p {
+      font-family: 'Noto Serif Bengali', serif;
+      font-size: 13.5px; color: var(--muted);
+      line-height: 1.85; margin-bottom: 10px;
+    }
+    .about-box a { color: var(--red); }
+
+    /* ── SIDEBAR ─────────────────────────────────── */
+    .sidebar { display: flex; flex-direction: column; gap: 20px; }
+
+    .sw { background: var(--white); border: 1px solid var(--border); border-radius: 9px; overflow: hidden; }
+
+    .sw-head {
+      background: var(--ink); color: var(--white);
+      font-family: 'Playfair Display', serif;
+      font-size: 11.5px; font-weight: 700;
+      letter-spacing: .07em; text-transform: uppercase;
+      padding: 10px 15px;
+    }
+    .sw-head.red { background: var(--red); }
+    .sw-body { padding: 13px; }
+
+    .sw-list { list-style: none; }
+    .sw-list li { border-bottom: 1px solid var(--cream); padding: 7px 0; }
+    .sw-list li:last-child { border-bottom: none; }
+    .sw-list a {
+      font-family: 'Noto Serif Bengali', serif;
+      font-size: 13px; color: var(--ink);
+      display: flex; align-items: center; gap: 8px;
+      transition: color .15s;
+    }
+    .sw-list a:hover { color: var(--red); }
+    .dot {
+      width: 6px; height: 6px;
+      background: var(--red);
+      border-radius: 50%; flex-shrink: 0;
+    }
+
+    .tag-cloud { display: flex; flex-wrap: wrap; gap: 7px; }
+    .tag {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      font-family: 'Noto Serif Bengali', serif;
+      font-size: 12px;
+      padding: 4px 11px; border-radius: 25px;
+      color: var(--ink);
+      display: inline-block;
+      transition: all .18s;
+    }
+    .tag:hover { background: var(--red); color: var(--white); border-color: var(--red); }
+
+    .sw-info {
+      font-family: 'Noto Serif Bengali', serif;
+      font-size: 13px; color: var(--muted); line-height: 1.85;
+    }
+    .sw-info a { color: var(--red); }
+
+    /* ── FOOTER ──────────────────────────────────── */
+    footer {
+      background: var(--ink);
+      color: rgba(255,255,255,.5);
+      padding: 30px 18px 18px;
+    }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px; font-weight: 900;
+      color: var(--white); margin-bottom: 6px;
+    }
+    .footer-brand span { color: var(--gold); }
+    .footer-tag {
+      font-family: 'Noto Serif Bengali', serif;
+      font-size: 13px; margin-bottom: 22px; opacity: .65;
+    }
+    .footer-links {
+      display: flex; flex-wrap: wrap;
+      gap: 5px 20px; margin-bottom: 22px;
+    }
+    .footer-links a {
+      font-family: 'Noto Serif Bengali', serif;
+      font-size: 12.5px; color: rgba(255,255,255,.5);
+      transition: color .18s;
+    }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-copy {
+      font-family: 'Source Serif 4', serif;
+      font-size: 11.5px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255,255,255,.1);
+    }
+
+    /* ── RESPONSIVE ──────────────────────────────── */
+    @media (max-width: 960px) {
+      .layout { grid-template-columns: 1fr; }
+      .sidebar { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+    }
+    @media (max-width: 640px) {
+      nav { display: none; }
+      #hero h1 { font-size: 32px; }
+      .hero-sub { font-size: 16px; }
+      .grid-top10 { grid-template-columns: repeat(3, 1fr); }
+      .grid-sm { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 400px) {
+      .grid-top10 { grid-template-columns: repeat(2, 1fr); }
+      .grid-sm { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* ── SCROLL ANIMATION ────────────────────────── */
+    .fade-in {
+      opacity: 0; transform: translateY(18px);
+      transition: opacity .5s ease, transform .5s ease;
+    }
+    .fade-in.visible { opacity: 1; transform: none; }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="header-inner">
+    <a class="logo" href="/" title="Bengali All Newspaper">
+      <div class="logo-badge">BAN</div>
+      <div class="logo-text">
+        <span class="logo-en">Bengali All Newspaper</span>
+        <span class="logo-bn">সকল বাংলা সংবাদপত্র</span>
+      </div>
+    </a>
+    <nav aria-label="Primary">
+      <a href="/">হোম</a>
+      <a href="/p/daily-newspaper.html">দৈনিক পত্রিকা</a>
+      <a href="/p/online-newspaper.html">অনলাইন পত্রিকা</a>
+      <a href="/p/epaper.html">ই-পেপার</a>
+      <a href="/p/tv-channel.html">টিভি চ্যানেল</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="hero" aria-label="Hero">
+  <p class="hero-eyebrow">BengaliAllNewspaper.com — ২০২৬ আপডেটেড তালিকা</p>
+  <h1>Bengali <span>All</span> Newspaper</h1>
+  <p class="hero-sub">সকল বাংলা সংবাদপত্র · এক জায়গায়</p>
+  <div class="pills">
+    <a href="#daily">দৈনিক পত্রিকা</a>
+    <a href="#online">অনলাইন পত্রিকা</a>
+    <a href="#epaper">ই-পেপার</a>
+    <a href="#tv">টিভি চ্যানেল</a>
+    <a href="#local">স্থানীয় পত্রিকা</a>
+    <a href="#english">ইংরেজি পত্রিকা</a>
+    <a href="#indian">ভারতীয় পত্রিকা</a>
+    <a href="#radio">রেডিও</a>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div id="ticker">
+  <div class="ticker-inner">
+    <span class="ticker-label">Bengali All Newspaper</span>
+    <span class="ticker-text">প্রথম আলো · যুগান্তর · কালের কণ্ঠ · বাংলাদেশ প্রতিদিন · সমকাল · ইত্তেফাক · বিডি নিউজ ২৪ · জাগো নিউজ ২৪ · BBC বাংলা · ঢাকা পোস্ট · যমুনা টিভি · সময় টিভি</span>
+  </div>
+</div>
+
+<!-- MAIN -->
+<div class="wrap">
+  <div class="layout">
+    <main>
+
+      <!-- DAILY NEWSPAPERS -->
+      <section class="sec fade-in" id="daily">
+        <div class="sec-head">
+          <span class="badge">Top 10</span>
+          <h2>শীর্ষ দৈনিক বাংলা পত্রিকা</h2>
+          <a class="more" href="/p/daily-newspaper.html">সব দেখুন →</a>
+        </div>
+        <div class="grid-top10">
+
+          <a class="card-top10" href="https://www.prothomalo.com/" rel="noopener nofollow" target="_blank" title="প্রথম আলো">
+            <span class="rank">১</span>
+            <div class="card-img"><img src="https://media.prothomalo.com/prothomalo-bangla/2025-11-17/qix5skks/palo-bangla.svg" alt="প্রথম আলো" loading="lazy" width="100" height="44"/></div>
+            <div class="card-name">প্রথম আলো</div>
+          </a>
+
+          <a class="card-top10" href="https://www.bd-pratidin.com/" rel="noopener nofollow" target="_blank" title="বাংলাদেশ প্রতিদিন">
+            <span class="rank">২</span>
+            <div class="card-img"><img src="https://www.bd-pratidin.com/front/img/logo.png" alt="বাংলাদেশ প্রতিদিন" loading="lazy" width="100" height="44"/></div>
+            <div class="card-name">বাংলাদেশ প্রতিদিন</div>
+          </a>
+
+          <a class="card-top10" href="https://www.jugantor.com/" rel="noopener nofollow" target="_blank" title="যুগান্তর">
+            <span class="rank">৩</span>
+            <div class="card-img"><img src="https://cdn.jugantor.com/uploads/settings/logo-black.png" alt="যুগান্তর" loading="lazy" width="100" height="44"/></div>
+            <div class="card-name">যুগান্তর</div>
+          </a>
+
+          <a class="card-top10" href="https://www.kalerkantho.com/" rel="noopener nofollow" target="_blank" title="কালের কণ্ঠ">
+            <span class="rank">৪</span>
+            <div class="card-img"><img src="https://www.tradebangla.com.bd/images/business/cover/2017/10/20/656201017124225.png" alt="কালের কণ্ঠ" loading="lazy" width="100" height="44"/></div>
+            <div class="card-name">কালের কণ্ঠ</div>
+          </a>
+
+          <a class="card-top10" href="https://bangla.thedailystar.net/" rel="noopener nofollow" target="_blank" title="ডেইলি স্টার">
+            <span class="rank">৫</span>
+            <div class="card-img"><img src="https://bangla.thedailystar.net/themes/custom/swallow/logo.png" alt="ডেইলি স্টার" loading="lazy" width="100" height="44"/></div>
+            <div class="card-name">ডেইলি স্টার</div>
+          </a>
+
+          <a class="card-top10" href="https://samakal.com/" rel="noopener nofollow" target="_blank" title="সমকাল">
+            <span class="rank">৬</span>
+            <div class="card-img"><img src="https://samakal.com/frontend/media/common/logo.png" alt="সমকাল" loading="lazy" width="100" height="44"/></div>
+            <div class="card-name">সমকাল</div>
+          </a>
+
+          <a class="card-top10" href="https://www.ittefaq.com.bd/" rel="noopener nofollow" target="_blank" title="ইত্তেফাক">
+            <span class="rank">৭</span>
+            <div class="card-img"><img src="https://cdn.ittefaqbd.com/contents/themes/public/style/images/logo.svg" alt="ইত্তেফাক" loading="lazy" width="100" height="44"/></div>
+            <div class="card-name">ইত্তেফাক</div>
+          </a>
+
+          <a class="card-top10" href="https://www.dailyinqilab.com/" rel="noopener nofollow" target="_blank" title="ইনকিলাব">
+            <span class="rank">৮</span>
+            <div class="card-img"><img src="https://dailyinqilab.com/mediaStorage/common/logo1671282573.png" alt="ইনকিলাব" loading="lazy" width="100" height="44"/></div>
+            <div class="card-name">ইনকিলাব</div>
+          </a>
+
+          <a class="card-top10" href="https://www.dainikamadershomoy.com/" rel="noopener nofollow" target="_blank" title="আমাদের সময়">
+            <span class="rank">৯</span>
+            <div class="card-img"><img src="https://www.dainikamadershomoy.com/_nuxt/dainik-amader-shomoy.cb44d7d.png" alt="আমাদের সময়" loading="lazy" width="100" height="44"/></div>
+            <div class="card-name">আমাদের সময়</div>
+          </a>
+
+          <a class="card-top10" href="https://www.dailynayadiganta.com/" rel="noopener nofollow" target="_blank" title="নয়াদিগন্ত">
+            <span class="rank">১০</span>
+            <div class="card-img"><img src="https://media.ndiganta.com/original_images/ND-logo-beta.png" alt="নয়াদিগন্ত" loading="lazy" width="100" height="44"/></div>
+            <div class="card-name">নয়াদিগন্ত</div>
+          </a>
+
+          <a class="card-top10" href="https://www.kalbela.com/" rel="noopener nofollow" target="_blank" title="কালবেলা">
+            <div class="card-img"><img src="https://www.kalbela.com/templates/web-view/images/logo.png" alt="কালবেলা" loading="lazy" width="100" height="44"/></div>
+            <div class="card-name">কালবেলা</div>
+          </a>
+
+          <a class="card-top10" href="https://mzamin.com/" rel="noopener nofollow" target="_blank" title="মানবজমিন">
+            <div class="card-img"><img src="https://www.mzamin.com/images/logo.png" alt="মানবজমিন" loading="lazy" width="100" height="44"/></div>
+            <div class="card-name">মানবজমিন</div>
+          </a>
+
+        </div>
+        <div class="desc-box"><strong>দৈনিক বাংলা পত্রিকা (Daily Bengali Newspaper):</strong> বাংলাদেশে ২০০০+ নিবন্ধিত পত্রিকা প্রকাশিত হয়। Bengali All Newspaper-এ পাবেন সকল দৈনিক পত্রিকার লিংক।</div>
+      </section>
+
+      <hr class="dvd"/>
+
+      <!-- ONLINE -->
+      <section class="sec fade-in" id="online">
+        <div class="sec-head">
+          <span class="badge">Online</span>
+          <h2>অনলাইন বাংলা পত্রিকা</h2>
+          <a class="more" href="/p/online-newspaper.html">সব দেখুন →</a>
+        </div>
+        <div class="grid-sm">
+
+          <a class="card-sm" href="https://bangla.bdnews24.com/" rel="noopener nofollow" target="_blank" title="বিডি নিউজ ২৪">
+            <div class="card-sm-img"><img src="https://bangla.bdnews24.com/frontend/assets/images/common/logo.png" alt="বিডি নিউজ ২৪" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">বিডি নিউজ ২৪</div>
+          </a>
+
+          <a class="card-sm" href="https://www.banglanews24.com/" rel="noopener nofollow" target="_blank" title="বাংলা নিউজ ২৪">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDlnhqJqVsuRt9XzGNqidAqZ-lRQ6gc0yZm6iEzz5kYdORrwq1CTFe9jD9UdCYpBHGFcGNPpVJI6BrWtqUzlfztmjvxZ4OFzNruNjVbrVm5Tf-COSa7GJSQ5qM5-DmEujyjNH-tUms0kGiLgxMl-pj7ggedZNx7GfxVGVW41N14UezeoZjlgcob4Kjn18/s320/logo.webp" alt="বাংলা নিউজ ২৪" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">বাংলা নিউজ ২৪</div>
+          </a>
+
+          <a class="card-sm" href="https://www.jagonews24.com/" rel="noopener nofollow" target="_blank" title="জাগো নিউজ ২৪">
+            <div class="card-sm-img"><img src="https://cdn.jagonews24.com/media/common/new-logo.png" alt="জাগো নিউজ ২৪" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">জাগো নিউজ ২৪</div>
+          </a>
+
+          <a class="card-sm" href="https://www.risingbd.com/" rel="noopener nofollow" target="_blank" title="রাইজিংবিডি">
+            <div class="card-sm-img"><img src="https://cdn.risingbd.com/media/common/risingbd-logo-small-sm.png" alt="রাইজিংবিডি" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">রাইজিংবিডি</div>
+          </a>
+
+          <a class="card-sm" href="https://www.dhakapost.com/" rel="noopener nofollow" target="_blank" title="ঢাকা পোস্ট">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfbJK7VYYWVg4YTsO4snauHaS6iFDfJ65-_1IFVfRvfZApmug-41HHW2cGRiCjSixuLXWNpscfJyLcGuN_YNyspB7rYthRjrjFSqtrHBh9170mnCoKpmSyd7PzVSKE3XrVRKbCNXQ59eklhB1XiYf5Xhl5HvUyvW3es24gzRZDP4Lbw7DYhkAw31VQ6Y0/s320/jago-news.png" alt="ঢাকা পোস্ট" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">ঢাকা পোস্ট</div>
+          </a>
+
+          <a class="card-sm" href="https://www.bbc.com/bengali" rel="noopener nofollow" target="_blank" title="BBC বাংলা">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiHscpSP3oRGMVkJFdNp-Cr4n9i9w5Hg2gtpvmuyyY61b5aIpjfY6BiBaXxPicliZZ4vbLtT-BlGYpFdXa38YP0iQ4jtx9URUO73NWohe0VTzEEFFD1vHxjWrU-rxR6ToatW6F_wQskMm-7MXvQx-Nl6ZkNoMNLKUdgRyDKfmzb7YRJgapZIxH4DknnpI/s1600/logo-bbc-bangla.jfif" alt="BBC বাংলা" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">BBC বাংলা</div>
+          </a>
+
+          <a class="card-sm" href="https://www.banglatribune.com/" rel="noopener nofollow" target="_blank" title="বাংলা ট্রিবিউন">
+            <div class="card-sm-img"><img src="https://cdn.banglatribune.net/contents/themes/public/style/images/logo.svg" alt="বাংলা ট্রিবিউন" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">বাংলা ট্রিবিউন</div>
+          </a>
+
+          <a class="card-sm" href="https://sarabangla.net/" rel="noopener nofollow" target="_blank" title="সারাবাংলা">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiKdk55n-U8EbdxRSpCzwkqDMG1CoBwk3Hcstp9T9jUTcXynIlz7dwXlqjjKF9WJklRIBWs4HWBX12MguZGSyQXbO-zu7In1FNPDpOpavCD8Vssqa-ojJUsfkqeGyJoboJFwHbX9B_NvFILL71ZLridQaqRyL4hLmVcngbrTchp0CHDG4B4uw7YkHBqIk/s16000/sarabangla.png" alt="সারাবাংলা" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">সারাবাংলা</div>
+          </a>
+
+          <a class="card-sm" href="https://www.voabangla.com/" rel="noopener nofollow" target="_blank" title="VOA বাংলা">
+            <div class="card-sm-img"><img src="https://www.voabangla.com/Content/responsive/VOA/bn-BD/img/logo.svg" alt="VOA বাংলা" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">VOA বাংলা</div>
+          </a>
+
+          <a class="card-sm" href="https://www.bd24live.com/" rel="noopener nofollow" target="_blank" title="বিডি ২৪ লাইভ">
+            <div class="card-sm-img"><img src="https://www.bd24live.com/wp-content/uploads/2025/09/logo-bd24live.png" alt="বিডি ২৪ লাইভ" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">বিডি ২৪ লাইভ</div>
+          </a>
+
+          <a class="card-sm" href="https://www.barta24.com/" rel="noopener nofollow" target="_blank" title="বার্তা২৪">
+            <div class="card-sm-img"><img src="https://barta24.com/static/media/Logo.4dbe90e86bec88f95e15.png" alt="বার্তা২৪" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">বার্তা২৪</div>
+          </a>
+
+          <a class="card-sm" href="https://www.dhakatimes24.com/" rel="noopener nofollow" target="_blank" title="ঢাকা টাইমস">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/dhakatimes.webp" alt="ঢাকা টাইমস" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">ঢাকা টাইমস</div>
+          </a>
+
+        </div>
+      </section>
+
+      <hr class="dvd"/>
+
+      <!-- EPAPER -->
+      <section class="sec fade-in" id="epaper">
+        <div class="sec-head">
+          <span class="badge">E-Paper</span>
+          <h2>সকল বাংলা ই-পেপার</h2>
+          <a class="more" href="/p/epaper.html">সব দেখুন →</a>
+        </div>
+        <div class="grid-sm">
+
+          <a class="card-sm" href="https://epaper.prothomalo.com/" rel="noopener nofollow" target="_blank" title="ই-প্রথম আলো">
+            <div class="card-sm-img"><img src="https://media.prothomalo.com/prothomalo-bangla/2025-11-17/qix5skks/palo-bangla.svg" alt="ই-প্রথম আলো" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">ই-প্রথম আলো</div>
+          </a>
+
+          <a class="card-sm" href="https://www.ebdpratidin.com/" rel="noopener nofollow" target="_blank" title="ই-বিডি প্রতিদিন">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/ebdpratidin.webp" alt="ই-বিডি প্রতিদিন" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">ই-বিডি প্রতিদিন</div>
+          </a>
+
+          <a class="card-sm" href="https://epaper.jugantor.com/" rel="noopener nofollow" target="_blank" title="ই-যুগান্তর">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/ejugantor.webp" alt="ই-যুগান্তর" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">ই-যুগান্তর</div>
+          </a>
+
+          <a class="card-sm" href="https://epaper.samakal.com/" rel="noopener nofollow" target="_blank" title="ই-সমকাল">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/esamakal.webp" alt="ই-সমকাল" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">ই-সমকাল</div>
+          </a>
+
+          <a class="card-sm" href="https://ekalerkantho.com/" rel="noopener nofollow" target="_blank" title="ই-কালের কণ্ঠ">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/ekalerkantho.webp" alt="ই-কালের কণ্ঠ" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">ই-কালের কণ্ঠ</div>
+          </a>
+
+          <a class="card-sm" href="https://epaper.ittefaq.com.bd/" rel="noopener nofollow" target="_blank" title="ই-ইত্তেফাক">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/eittefaq.webp" alt="ই-ইত্তেফাক" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">ই-ইত্তেফাক</div>
+          </a>
+
+          <a class="card-sm" href="https://enayadiganta.com/" rel="noopener nofollow" target="_blank" title="ই-নয়াদিগন্ত">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/enayadiganta.webp" alt="ই-নয়াদিগন্ত" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">ই-নয়াদিগন্ত</div>
+          </a>
+
+          <a class="card-sm" href="https://epaper.dainikamadershomoy.com/" rel="noopener nofollow" target="_blank" title="ই-আমাদের সময়">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/eamadershomoy.webp" alt="ই-আমাদের সময়" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">ই-আমাদের সময়</div>
+          </a>
+
+        </div>
+      </section>
+
+      <hr class="dvd"/>
+
+      <!-- TV -->
+      <section class="sec fade-in" id="tv">
+        <div class="sec-head">
+          <span class="badge">TV Live</span>
+          <h2>বাংলা টিভি চ্যানেল</h2>
+          <a class="more" href="/p/tv-channel.html">সব দেখুন →</a>
+        </div>
+        <div class="grid-sm">
+
+          <a class="card-sm" href="https://www.jamunatelevision.com/" rel="noopener nofollow" target="_blank" title="যমুনা টিভি">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/jamunatv.webp" alt="যমুনা টিভি" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">যমুনা টিভি</div>
+          </a>
+
+          <a class="card-sm" href="http://www.channel24bd.tv/" rel="noopener nofollow" target="_blank" title="চ্যানেল ২৪">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/channel24.webp" alt="চ্যানেল ২৪" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">চ্যানেল ২৪</div>
+          </a>
+
+          <a class="card-sm" href="http://www.somoynews.tv/" rel="noopener nofollow" target="_blank" title="সময় টিভি">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/somoytv.webp" alt="সময় টিভি" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">সময় টিভি</div>
+          </a>
+
+          <a class="card-sm" href="https://www.rtvonline.com/" rel="noopener nofollow" target="_blank" title="আরটিভি">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/rtv.webp" alt="আরটিভি" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">আরটিভি</div>
+          </a>
+
+          <a class="card-sm" href="https://www.ntvbd.com/" rel="noopener nofollow" target="_blank" title="এনটিভি">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/ntv.webp" alt="এনটিভি" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">এনটিভি</div>
+          </a>
+
+          <a class="card-sm" href="https://ekattor.tv/" rel="noopener nofollow" target="_blank" title="একাত্তর টিভি">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/ekattor.webp" alt="একাত্তর টিভি" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">একাত্তর টিভি</div>
+          </a>
+
+          <a class="card-sm" href="https://www.desh.tv/" rel="noopener nofollow" target="_blank" title="দেশ টিভি">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/deshtv.webp" alt="দেশ টিভি" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">দেশ টিভি</div>
+          </a>
+
+          <a class="card-sm" href="https://btv.gov.bd/" rel="noopener nofollow" target="_blank" title="বিটিভি">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/btv.webp" alt="বিটিভি" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">বিটিভি</div>
+          </a>
+
+          <a class="card-sm" href="https://news24bd.tv/" rel="noopener nofollow" target="_blank" title="নিউজ ২৪">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/news24.webp" alt="নিউজ ২৪" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">নিউজ ২৪</div>
+          </a>
+
+          <a class="card-sm" href="https://ekushey-tv.com/" rel="noopener nofollow" target="_blank" title="একুশে টিভি">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/ekushey.webp" alt="একুশে টিভি" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">একুশে টিভি</div>
+          </a>
+
+          <a class="card-sm" href="https://www.itvbd.com/" rel="noopener nofollow" target="_blank" title="ইন্ডিপেন্ডেন্ট টিভি">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/independenttv.webp" alt="ইন্ডিপেন্ডেন্ট টিভি" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">ইন্ডিপেন্ডেন্ট টিভি</div>
+          </a>
+
+          <a class="card-sm" href="https://channel-i-tv.com/" rel="noopener nofollow" target="_blank" title="চ্যানেল আই">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/channeli.webp" alt="চ্যানেল আই" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">চ্যানেল আই</div>
+          </a>
+
+        </div>
+      </section>
+
+      <hr class="dvd"/>
+
+      <!-- LOCAL -->
+      <section class="sec fade-in" id="local">
+        <div class="sec-head">
+          <span class="badge">Local</span>
+          <h2>স্থানীয় বাংলা পত্রিকা</h2>
+          <a class="more" href="/p/local-newspaper.html">সব দেখুন →</a>
+        </div>
+        <div class="grid-sm">
+
+          <a class="card-sm" href="https://dainikazadi.net/" rel="noopener nofollow" target="_blank" title="দৈনিক আজাদী">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/dainikazadi.webp" alt="দৈনিক আজাদী" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">দৈনিক আজাদী</div>
+          </a>
+
+          <a class="card-sm" href="https://dainikpurbokone.net/" rel="noopener nofollow" target="_blank" title="দৈনিক পূর্বকোণ">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/purbokone.webp" alt="দৈনিক পূর্বকোণ" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">দৈনিক পূর্বকোণ</div>
+          </a>
+
+          <a class="card-sm" href="https://rajshahinews24.com/" rel="noopener nofollow" target="_blank" title="রাজশাহী নিউজ ২৪">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/rajshahi.webp" alt="রাজশাহী নিউজ ২৪" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">রাজশাহী নিউজ ২৪</div>
+          </a>
+
+          <a class="card-sm" href="https://dainiksylhet.com/" rel="noopener nofollow" target="_blank" title="দৈনিক সিলেট">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/dainiksylhet.webp" alt="দৈনিক সিলেট" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">দৈনিক সিলেট</div>
+          </a>
+
+          <a class="card-sm" href="https://www.purbanchal.com/" rel="noopener nofollow" target="_blank" title="দৈনিক পূর্বাঞ্চল">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/purbanchal.webp" alt="দৈনিক পূর্বাঞ্চল" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">দৈনিক পূর্বাঞ্চল</div>
+          </a>
+
+          <a class="card-sm" href="https://www.amaderbarisal.com/" rel="noopener nofollow" target="_blank" title="আমাদের বরিশাল">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/amaderbarisal.webp" alt="আমাদের বরিশাল" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">আমাদের বরিশাল</div>
+          </a>
+
+        </div>
+      </section>
+
+      <hr class="dvd"/>
+
+      <!-- ENGLISH -->
+      <section class="sec fade-in" id="english">
+        <div class="sec-head">
+          <span class="badge">English</span>
+          <h2>বাংলাদেশের ইংরেজি পত্রিকা</h2>
+          <a class="more" href="/p/english-newspaper.html">সব দেখুন →</a>
+        </div>
+        <div class="grid-sm">
+
+          <a class="card-sm" href="https://www.thedailystar.net/" rel="noopener nofollow" target="_blank" title="The Daily Star">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/dailystar.webp" alt="The Daily Star" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">The Daily Star</div>
+          </a>
+
+          <a class="card-sm" href="https://www.tbsnews.net/" rel="noopener nofollow" target="_blank" title="The Business Standard">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/tbsnews.webp" alt="Business Standard" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">Business Standard</div>
+          </a>
+
+          <a class="card-sm" href="https://newagebd.net/" rel="noopener nofollow" target="_blank" title="New Age">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/newage.webp" alt="New Age" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">New Age</div>
+          </a>
+
+          <a class="card-sm" href="https://www.dhakatribune.com/" rel="noopener nofollow" target="_blank" title="Dhaka Tribune">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/dhakatribune.webp" alt="Dhaka Tribune" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">Dhaka Tribune</div>
+          </a>
+
+          <a class="card-sm" href="https://www.daily-sun.com/" rel="noopener nofollow" target="_blank" title="Daily Sun">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/dailysun.webp" alt="Daily Sun" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">Daily Sun</div>
+          </a>
+
+          <a class="card-sm" href="https://thefinancialexpress.com.bd/" rel="noopener nofollow" target="_blank" title="Financial Express">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/financialexpress.webp" alt="Financial Express" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">Financial Express</div>
+          </a>
+
+        </div>
+      </section>
+
+      <hr class="dvd"/>
+
+      <!-- INDIAN -->
+      <section class="sec fade-in" id="indian">
+        <div class="sec-head">
+          <span class="badge">India</span>
+          <h2>ভারতীয় বাংলা পত্রিকা</h2>
+          <a class="more" href="/p/indian-newspaper.html">সব দেখুন →</a>
+        </div>
+        <div class="grid-sm">
+
+          <a class="card-sm" href="https://www.anandabazar.com/" rel="noopener nofollow" target="_blank" title="আনন্দবাজার পত্রিকা">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/anandabazar.webp" alt="আনন্দবাজার" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">আনন্দবাজার</div>
+          </a>
+
+          <a class="card-sm" href="https://www.sangbadpratidin.in/" rel="noopener nofollow" target="_blank" title="সংবাদ প্রতিদিন">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/sangbadpratidin.webp" alt="সংবাদ প্রতিদিন" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">সংবাদ প্রতিদিন</div>
+          </a>
+
+          <a class="card-sm" href="https://bengali.abplive.com/" rel="noopener nofollow" target="_blank" title="ABP আনন্দ">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/abpananda.webp" alt="ABP আনন্দ" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">ABP আনন্দ</div>
+          </a>
+
+          <a class="card-sm" href="https://eisamay.com/" rel="noopener nofollow" target="_blank" title="এই সময়">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/eisamay.webp" alt="এই সময়" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">এই সময়</div>
+          </a>
+
+        </div>
+      </section>
+
+      <hr class="dvd"/>
+
+      <!-- RADIO -->
+      <section class="sec fade-in" id="radio">
+        <div class="sec-head">
+          <span class="badge">FM Radio</span>
+          <h2>বাংলা রেডিও চ্যানেল</h2>
+          <a class="more" href="/p/fm-radio.html">সব দেখুন →</a>
+        </div>
+        <div class="grid-sm">
+
+          <a class="card-sm" href="https://www.bbc.com/bengali/radio" rel="noopener nofollow" target="_blank" title="BBC বাংলা রেডিও">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/bbcradio.webp" alt="BBC বাংলা রেডিও" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">BBC বাংলা রেডিও</div>
+          </a>
+
+          <a class="card-sm" href="http://www.jago.fm/" rel="noopener nofollow" target="_blank" title="জাগো FM">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/jagofm.webp" alt="জাগো FM" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">জাগো FM</div>
+          </a>
+
+          <a class="card-sm" href="https://www.dhakafm904.com/" rel="noopener nofollow" target="_blank" title="ঢাকা FM">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/dhakafm.webp" alt="ঢাকা FM" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">ঢাকা FM</div>
+          </a>
+
+          <a class="card-sm" href="https://www.betar.gov.bd/" rel="noopener nofollow" target="_blank" title="বাংলাদেশ বেতার">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/betar.webp" alt="বাংলাদেশ বেতার" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">বাংলাদেশ বেতার</div>
+          </a>
+
+          <a class="card-sm" href="https://radiofoorti.fm/" rel="noopener nofollow" target="_blank" title="রেডিও ফূর্তি">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/radiofoorti.webp" alt="রেডিও ফূর্তি" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">রেডিও ফূর্তি</div>
+          </a>
+
+          <a class="card-sm" href="https://radioshadhin.fm/" rel="noopener nofollow" target="_blank" title="রেডিও স্বাধীন">
+            <div class="card-sm-img"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/radioshadhin.webp" alt="রেডিও স্বাধীন" loading="lazy" width="90" height="36"/></div>
+            <div class="card-sm-name">রেডিও স্বাধীন</div>
+          </a>
+
+        </div>
+      </section>
+
+      <hr class="dvd"/>
+
+      <!-- FAQ -->
+      <section class="sec fade-in" id="faq">
+        <div class="sec-head">
+          <span class="badge">FAQ</span>
+          <h2>সচরাচর জিজ্ঞাসা</h2>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Bengali All Newspaper কী এবং কীভাবে কাজ করে?</div>
+          <div class="faq-a">Bengali All Newspaper (BengaliAllNewspaper.com) হলো বাংলাদেশ ও ভারতের সকল বাংলা পত্রিকার সম্পূর্ণ ডিরেক্টরি সাইট। দৈনিক পত্রিকা, অনলাইন নিউজপোর্টাল, ই-পেপার, টিভি চ্যানেল ও রেডিওর লিংক এক জায়গায় পাওয়া যায়।</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">বাংলাদেশে সবচেয়ে জনপ্রিয় Bengali Newspaper কোনগুলো?</div>
+          <div class="faq-a">প্রথম আলো, বাংলাদেশ প্রতিদিন, যুগান্তর, কালের কণ্ঠ এবং সমকাল বাংলাদেশের সবচেয়ে জনপ্রিয় বাংলা পত্রিকা।</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">সকল বাংলা পত্রিকার ই-পেপার কোথায় পাবো?</div>
+          <div class="faq-a">BengaliAllNewspaper.com-এর ই-পেপার বিভাগে প্রথম আলো, যুগান্তর, সমকাল, কালের কণ্ঠসহ সকল পত্রিকার ই-পেপার লিংক পাবেন।</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">ভারতের জনপ্রিয় Bengali Newspaper কোনগুলো?</div>
+          <div class="faq-a">আনন্দবাজার পত্রিকা, সংবাদ প্রতিদিন, ABP আনন্দ, এই সময় ও বর্তমান পত্রিকা ভারতের জনপ্রিয় বাংলা পত্রিকা।</div>
+        </div>
+      </section>
+
+      <hr class="dvd"/>
+
+      <!-- ABOUT -->
+      <div class="about-box fade-in" id="about">
+        <h2>Bengali All Newspaper সম্পর্কে — About BengaliAllNewspaper.com</h2>
+        <p><strong>Bengali All Newspaper</strong> হলো বাংলাদেশ ও ভারতের সকল বাংলা সংবাদপত্রের সবচেয়ে বড় ডিরেক্টরি। এক ক্লিকেই পড়ুন আপনার পছন্দের যেকোনো Bengali newspaper।</p>
+        <p>বাংলাদেশে ২০০০-এরও বেশি নিবন্ধিত পত্রিকা রয়েছে। <strong>BengaliAllNewspaper.com</strong>-এ সকল জনপ্রিয় Bengali newspaper-এর যাচাইকৃত লিংক সংগ্রহ করা আছে।</p>
+        <p>সর্বশেষ আপডেট: <time datetime="2026-02-21">ফেব্রুয়ারি ২১, ২০২৬</time> — তথ্যসূত্র: <a href="https://moi.gov.bd/" rel="noopener nofollow" target="_blank">বাংলাদেশ তথ্য ও সম্প্রচার মন্ত্রণালয়</a></p>
+      </div>
+
+    </main>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" aria-label="Sidebar">
+
+      <div class="sw">
+        <div class="sw-head red">দ্রুত নেভিগেশন</div>
+        <div class="sw-body">
+          <ul class="sw-list">
+            <li><a href="#daily"><span class="dot"></span>শীর্ষ দৈনিক পত্রিকা</a></li>
+            <li><a href="#online"><span class="dot"></span>অনলাইন পত্রিকা</a></li>
+            <li><a href="#epaper"><span class="dot"></span>ই-পেপার</a></li>
+            <li><a href="#tv"><span class="dot"></span>টিভি চ্যানেল</a></li>
+            <li><a href="#local"><span class="dot"></span>স্থানীয় পত্রিকা</a></li>
+            <li><a href="#english"><span class="dot"></span>ইংরেজি পত্রিকা</a></li>
+            <li><a href="#indian"><span class="dot"></span>ভারতীয় পত্রিকা</a></li>
+            <li><a href="#radio"><span class="dot"></span>FM রেডিও</a></li>
+            <li><a href="#faq"><span class="dot"></span>সচরাচর জিজ্ঞাসা</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sw">
+        <div class="sw-head">বিভাগসমূহ</div>
+        <div class="sw-body">
+          <div class="tag-cloud">
+            <a class="tag" href="/p/daily-newspaper.html">দৈনিক পত্রিকা</a>
+            <a class="tag" href="/p/online-newspaper.html">অনলাইন পত্রিকা</a>
+            <a class="tag" href="/p/epaper.html">ই-পেপার</a>
+            <a class="tag" href="/p/tv-channel.html">টিভি চ্যানেল</a>
+            <a class="tag" href="/p/local-newspaper.html">স্থানীয় পত্রিকা</a>
+            <a class="tag" href="/p/english-newspaper.html">ইংরেজি পত্রিকা</a>
+            <a class="tag" href="/p/indian-newspaper.html">ভারতীয় পত্রিকা</a>
+            <a class="tag" href="/p/fm-radio.html">রেডিও</a>
+            <a class="tag" href="/p/magazine.html">ম্যাগাজিন</a>
+            <a class="tag" href="/p/jobs.html">জব সাইট</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="sw">
+        <div class="sw-head">জনপ্রিয় পত্রিকা</div>
+        <div class="sw-body">
+          <ul class="sw-list">
+            <li><a href="https://www.prothomalo.com/" rel="noopener nofollow" target="_blank"><span class="dot"></span>প্রথম আলো</a></li>
+            <li><a href="https://www.jugantor.com/" rel="noopener nofollow" target="_blank"><span class="dot"></span>যুগান্তর</a></li>
+            <li><a href="https://www.kalerkantho.com/" rel="noopener nofollow" target="_blank"><span class="dot"></span>কালের কণ্ঠ</a></li>
+            <li><a href="https://www.bd-pratidin.com/" rel="noopener nofollow" target="_blank"><span class="dot"></span>বাংলাদেশ প্রতিদিন</a></li>
+            <li><a href="https://samakal.com/" rel="noopener nofollow" target="_blank"><span class="dot"></span>সমকাল</a></li>
+            <li><a href="https://www.ittefaq.com.bd/" rel="noopener nofollow" target="_blank"><span class="dot"></span>ইত্তেফাক</a></li>
+            <li><a href="https://bangla.thedailystar.net/" rel="noopener nofollow" target="_blank"><span class="dot"></span>ডেইলি স্টার বাংলা</a></li>
+            <li><a href="https://www.jagonews24.com/" rel="noopener nofollow" target="_blank"><span class="dot"></span>জাগো নিউজ ২৪</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sw">
+        <div class="sw-head">সাইট সম্পর্কে</div>
+        <div class="sw-body">
+          <p class="sw-info"><strong>Bengali All Newspaper</strong> — সকল বাংলা পত্রিকার নির্ভরযোগ্য ডিরেক্টরি।</p>
+          <br/>
+          <p class="sw-info"><a href="/p/contact.html">যোগাযোগ করুন</a></p>
+          <p class="sw-info"><a href="/p/submit.html">পত্রিকা যোগ করুন</a></p>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">Bengali <span>All</span> Newspaper</div>
+    <div class="footer-tag">সকল বাংলা সংবাদপত্র · এক ঠিকানায় · BengaliAllNewspaper.com</div>
+    <div class="footer-links">
+      <a href="/">হোম</a>
+      <a href="/p/daily-newspaper.html">দৈনিক পত্রিকা</a>
+      <a href="/p/online-newspaper.html">অনলাইন পত্রিকা</a>
+      <a href="/p/epaper.html">ই-পেপার</a>
+      <a href="/p/tv-channel.html">টিভি চ্যানেল</a>
+      <a href="/p/local-newspaper.html">স্থানীয় পত্রিকা</a>
+      <a href="/p/english-newspaper.html">ইংরেজি পত্রিকা</a>
+      <a href="/p/indian-newspaper.html">ভারতীয় পত্রিকা</a>
+      <a href="/p/fm-radio.html">রেডিও</a>
+      <a href="/p/about.html">আমাদের সম্পর্কে</a>
+      <a href="/p/contact.html">যোগাযোগ</a>
+      <a href="/p/privacy.html">গোপনীয়তা নীতি</a>
+    </div>
+    <p class="footer-copy">Copyright © 2018–2026 Bengali All Newspaper — BengaliAllNewspaper.com | সর্বস্বত্ব সংরক্ষিত</p>
+  </div>
+</footer>
+
+<script>
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+
+  // Scroll fade-in
+  const observer = new IntersectionObserver(
+    entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+    { threshold: 0.08 }
+  );
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
