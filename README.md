@@ -42,11 +42,10 @@ Last Major Update: February 2026
 - No JavaScript frameworks — only ~30 lines of vanilla JS for FAQ & scroll effects
 
 ## 📂 Project Structure
-bengali-all-newspaper/
-├── index.html          # Main single-page file
-├── README.md           # This file
-└── (optional folders)
-├── assets/         # For local logos, screenshots, favicons
-├── css/            # If you later extract styles
-└── js/             # If you later extract scripts
-text
+bengali-all-newspaper/ <br />
+├── index.html          # Main single-page file<br />
+├── README.md           # This file <br />
+└── (optional folders) <br />
+├── assets/         # For local logos, screenshots, favicons <br />
+├── css/            # If you later extract styles <br />
+└── js/             # If you later extract scripts <br />
