@@ -3,7 +3,7 @@
 **সকল বাংলা সংবাদপত্র — এক জায়গায়**  
 A clean, modern, responsive single-page directory of all major Bengali newspapers, online news portals, e-papers, TV channels, local papers, English dailies from Bangladesh, Indian Bangla newspapers, and FM radio stations.
 
-![Hero Screenshot](https://via.placeholder.com/1200x600/962d22/ffffff?text=Bengali+All+Newspaper+Hero)  
+![Hero Screenshot](Screenshot_1.png)  
 *(Replace with actual screenshot when you host it)*
 
 Live Demo: [https://bengaliallnewspaper.com](https://bengaliallnewspaper.com) *(update with your actual domain)*  
